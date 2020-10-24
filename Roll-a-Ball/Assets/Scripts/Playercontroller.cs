@@ -69,6 +69,10 @@ public class Playercontroller : MonoBehaviour
             other.gameObject.SetActive(false);
             count = count + 5;
             SetCountText();
+            //citation https://answers.unity.com/questions/1255990/how-to-change-the-color-of-an-object-when-it-colli.html
+            //How to change the material color
+            //citation https://answers.unity.com/questions/1427037/how-to-generate-a-random-color.html
+            //How to randomize a color
             transform.GetComponent<Renderer>().material.color= new Color
             (Random.Range(0f, 1f), 
              Random.Range(0f, 1f), 
