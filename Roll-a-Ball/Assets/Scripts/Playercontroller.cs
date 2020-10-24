@@ -14,6 +14,7 @@ public class Playercontroller : MonoBehaviour
     private int count;
     private float movementX;
     private float movementY;
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -31,11 +32,13 @@ public class Playercontroller : MonoBehaviour
 
        movementX = movementVector.x;
        movementY = movementVector.y;
+ 
+
     }
     void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
-        if(count >= 13)
+        countText.text = "Score: " + count.ToString();
+        if(count >= 30)
         {
             winTextObject.SetActive(true);
         }
@@ -45,6 +48,7 @@ public class Playercontroller : MonoBehaviour
     {
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
         rb.AddForce(movement * speed);
+        
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -57,8 +61,21 @@ public class Playercontroller : MonoBehaviour
         if(other.gameObject.CompareTag("Ground"))
         {
              loseTextObject.SetActive(true);
+             count = 0;
+             SetCountText();
         }
+        if(other.gameObject.CompareTag("Powerup"))
+        {
+            other.gameObject.SetActive(false);
+            count = count + 5;
+            SetCountText();
+            transform.GetComponent<Renderer>().material.color= new Color
+            (Random.Range(0f, 1f), 
+             Random.Range(0f, 1f), 
+             Random.Range(0f, 1f),
+             Random.Range(0f, 1f));
         
+        }
     }
        
 }
