@@ -5,7 +5,7 @@ using CreatorKitCode;
 
 public class Torso : EquipmentItem.EquippedEffect
 {
-     private int AddedDefense = 100;
+     private int AddedDefense = 10;
      private int defense;
      public override void Equipped(CharacterData user)
      {
