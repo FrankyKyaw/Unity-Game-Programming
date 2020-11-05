@@ -21,7 +21,7 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 577, y: 471}
+  m_MinSize: {x: 578, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
   controlID: -1
@@ -138,7 +138,7 @@ MonoBehaviour:
     y: 0
     width: 1096
     height: 731
-  m_MinSize: {x: 302, y: 471}
+  m_MinSize: {x: 303, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: -1
@@ -163,8 +163,8 @@ MonoBehaviour:
     y: 0
     width: 1096
     height: 388
-  m_MinSize: {x: 302, y: 200}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 303, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: -1
 --- !u!114 &5
@@ -186,8 +186,8 @@ MonoBehaviour:
     y: 0
     width: 206
     height: 388
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -221,10 +221,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 1990}
-      m_SelectedIDs: 
+      scrollPos: {x: 0, y: 598}
+      m_SelectedIDs: 90f7feff
       m_LastClickedID: 0
-      m_ExpandedIDs: 66deffff7ee8ffffacefffff62f4ffff94f4ffffc2f4ffffd8f6ffff34fbffff3afbffff46fbffff4afbffff5afbffff
+      m_ExpandedIDs: f2f3ffffd6f6ffffd8f6ffff34fbffff3afbffff46fbffff4afbffff5afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -311,9 +311,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.955802, y: 0.40538445, z: 6.763808}
+    m_Target: {x: -4.936573, y: -0.12155216, z: 6.6873164}
     speed: 2
-    m_Value: {x: -4.955802, y: 0.40538445, z: 6.763808}
+    m_Value: {x: -4.936573, y: -0.12155216, z: 6.6873164}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -443,7 +443,7 @@ MonoBehaviour:
     height: 322
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
-    m_NameFilter: 
+    m_NameFilter: potion
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -454,21 +454,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Creator Kit - Beginner Code/Prefabs/ItemDatabase
+    m_Folders: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Creator Kit - Beginner Code/Prefabs/ItemDatabase
+  - Assets/Creator Kit - Beginner Code
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\user\Documents\Github\FrankyGameProgramming\NeedlesToSlay
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 118}
-    m_SelectedIDs: 30ae0000
-    m_LastClickedID: 44592
-    m_ExpandedIDs: 00000000744200008cad00008ead000090ad000000ca9a3b
+    scrollPos: {x: 0, y: 95}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 0000000074420000a6ad0000a8ad0000aaad000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -484,7 +483,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 9}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -496,7 +495,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000744200008cad00008ead000090ad000000ca9a3b
+    m_ExpandedIDs: 0000000074420000a6ad0000a8ad0000aaad000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -521,8 +520,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 90f7feff
+    m_LastClickedInstanceID: -67696
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300000e0dfeff90c4000042c40000f265ffff24450000
     m_RenameOverlay:
@@ -540,7 +539,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 9}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0

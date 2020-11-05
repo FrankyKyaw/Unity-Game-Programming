@@ -394,7 +394,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512627497}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eafb046109e85bd4bbe06eb5361fd8e6, type: 3}
   m_Name: 
@@ -2295,6 +2295,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 496856203587647319, guid: 84f9e853b1f214024af24683df1085d0,
+        type: 3}
+      propertyPath: ObjectToSpawn
+      value: 
+      objectReference: {fileID: 2768226103183460623, guid: 2035adf7c54e5624f88f30e554b854a4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84f9e853b1f214024af24683df1085d0, type: 3}
 --- !u!1 &873160749
@@ -2752,6 +2758,9 @@ MonoBehaviour:
   - Entries:
     - Weight: 50
       Item: {fileID: 11400000, guid: 0cfc00acfe13e6643b501a5b47e667ce, type: 2}
+  - Entries:
+    - Weight: 50
+      Item: {fileID: 11400000, guid: e262c866f6199fc4bb90e25c1026fb8f, type: 2}
   SpawnedClip: {fileID: 8300000, guid: dbdd0ed5d7f4cba46a6fda8f74dd5cc9, type: 3}
 --- !u!114 &1673832599
 MonoBehaviour:
