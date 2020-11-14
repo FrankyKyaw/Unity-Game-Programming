@@ -382,6 +382,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 92511770}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &93579259 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7534835482441110514, guid: 75b97eef89f89f44293e5be7644294ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 1276268949}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b924a7de165d74f9e59ba94d4e3825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &153362854
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,6 +554,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &201230132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5583303070793272799, guid: d217833956cad6e449360d518cff800f,
+    type: 3}
+  m_PrefabInstance: {fileID: 404060286}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &201230134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201230132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74cd5048b78f9fd4d9721958d6be078b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 7123927010425243611}
+  gameEnding: {fileID: 0}
+  wayPointPatrol: {fileID: 446272242}
 --- !u!1 &243780905
 GameObject:
   m_ObjectHideFlags: 3
@@ -802,6 +835,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 404060286}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &446272242 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7534835482441110514, guid: 75b97eef89f89f44293e5be7644294ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 602041225}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b924a7de165d74f9e59ba94d4e3825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &498187450 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7534835482441110514, guid: 75b97eef89f89f44293e5be7644294ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 2461909452929753093}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b924a7de165d74f9e59ba94d4e3825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &538323940
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,6 +896,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 270107289}
     m_Modifications:
+    - target: {fileID: 930118374915349627, guid: 75b97eef89f89f44293e5be7644294ce,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7123927010425243611}
+    - target: {fileID: 930118374915349627, guid: 75b97eef89f89f44293e5be7644294ce,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 2086032599}
     - target: {fileID: 1295007195260694370, guid: 75b97eef89f89f44293e5be7644294ce,
         type: 3}
       propertyPath: player
@@ -1173,6 +1240,27 @@ Transform:
   m_Father: {fileID: 1567123518}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &878126652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5583303070793272799, guid: d217833956cad6e449360d518cff800f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6108821412028468611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &878126654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878126652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74cd5048b78f9fd4d9721958d6be078b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 7123927010425243611}
+  gameEnding: {fileID: 0}
+  wayPointPatrol: {fileID: 498187450}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1652,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 270107289}
     m_Modifications:
+    - target: {fileID: 930118374915349627, guid: 75b97eef89f89f44293e5be7644294ce,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7123927010425243611}
+    - target: {fileID: 930118374915349627, guid: 75b97eef89f89f44293e5be7644294ce,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 2086032599}
     - target: {fileID: 1295007195260694370, guid: 75b97eef89f89f44293e5be7644294ce,
         type: 3}
       propertyPath: player
@@ -1664,7 +1762,13 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7534835482441110514, guid: 75b97eef89f89f44293e5be7644294ce,
+        type: 3}
+      propertyPath: caughtWayPoint
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1295007195260694370, guid: 75b97eef89f89f44293e5be7644294ce, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 75b97eef89f89f44293e5be7644294ce, type: 3}
 --- !u!4 &1276268950 stripped
 Transform:
@@ -1679,6 +1783,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 270107289}
     m_Modifications:
+    - target: {fileID: 930118374915349627, guid: 75b97eef89f89f44293e5be7644294ce,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 2086032599}
+    - target: {fileID: 930118374915349627, guid: 75b97eef89f89f44293e5be7644294ce,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7123927010425243611}
     - target: {fileID: 1295007195260694370, guid: 75b97eef89f89f44293e5be7644294ce,
         type: 3}
       propertyPath: player
@@ -1998,7 +2112,6 @@ Transform:
   - {fileID: 1500321152}
   - {fileID: 2016450469}
   - {fileID: 2003839325}
-  - {fileID: 1894598310}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5416,36 +5529,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1894598309
+--- !u!1 &1835350500 stripped
 GameObject:
+  m_CorrespondingSourceObject: {fileID: 5583303070793272799, guid: d217833956cad6e449360d518cff800f,
+    type: 3}
+  m_PrefabInstance: {fileID: 92511770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1835350502
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1894598310}
-  m_Layer: 0
-  m_Name: WayPoint (10)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1894598310
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894598309}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.37, y: 0, z: -6.29}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1567123518}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1835350500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74cd5048b78f9fd4d9721958d6be078b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 7123927010425243611}
+  gameEnding: {fileID: 0}
+  wayPointPatrol: {fileID: 93579259}
 --- !u!1 &2003839324
 GameObject:
   m_ObjectHideFlags: 0
@@ -5589,6 +5693,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 270107289}
     m_Modifications:
+    - target: {fileID: 930118374915349627, guid: 75b97eef89f89f44293e5be7644294ce,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 2086032599}
+    - target: {fileID: 930118374915349627, guid: 75b97eef89f89f44293e5be7644294ce,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 7123927010425243611}
     - target: {fileID: 1295007195260694370, guid: 75b97eef89f89f44293e5be7644294ce,
         type: 3}
       propertyPath: player
@@ -5762,7 +5876,12 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 2086032599}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028259061798340252, guid: d217833956cad6e449360d518cff800f,
+        type: 3}
+      propertyPath: wayPointPatrol
+      value: 
+      objectReference: {fileID: 498187450}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d217833956cad6e449360d518cff800f, type: 3}
 --- !u!1001 &7123927010425243605

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Observer : MonoBehaviour
+public class GhostObserver : MonoBehaviour
 {
   public Transform player;
   public GameEnding gameEnding;
@@ -36,7 +36,7 @@ public class Observer : MonoBehaviour
             {
                 if (raycastHit.collider.transform == player)
                 {
-                    wayPointPatrol.ObserverCaught (transform);
+                   gameEnding.CaughtPlayer ();
                 }
             }
         }

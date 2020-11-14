@@ -8,27 +8,32 @@ public class WayPointPatrol : MonoBehaviour
     public NavMeshAgent navMeshAgent;
     public Transform[] waypoints;
     
-
+    Transform point;
     int m_CurrentWaypointIndex;
 
+    bool m_IsObserverCaught;
+   
     void Start()
     {
-        gargoyle enemy = gameObject.GetComponent("Gargoyle");
         navMeshAgent.SetDestination(waypoints[0].position);
     }
 
     void Update()
     {
         if(navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance)
+            {
+                m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
+                navMeshAgent.SetDestination (waypoints[m_CurrentWaypointIndex].position);
+            }
+        if(m_IsObserverCaught)
         {
-            m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
-            navMeshAgent.SetDestination (waypoints[m_CurrentWaypointIndex].position);
+            navMeshAgent.SetDestination(point.position);
         }
     }
 
-    void ObserverCaught()
+    public void ObserverCaught(Transform gargoyle)
     {
-         navMeshAgent.SetDestination(gargoyle.transform.position);
-         
+        point = gargoyle;
+        m_IsObserverCaught = true;
     }
 }
