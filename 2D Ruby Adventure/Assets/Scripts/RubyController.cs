@@ -10,6 +10,8 @@ public class RubyController : MonoBehaviour
 
     public GameObject projectilePrefab;
 
+    public ParticleSystem gettingHitEffect;
+
     public int health { get { return currentHealth; }}
     int currentHealth;
 
@@ -82,9 +84,10 @@ public class RubyController : MonoBehaviour
                 return;
             isInvincible = true;
             invincibleTimer = timeInvincible;
+            gettingHitEffect.Play();
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        Debug.Log(currentHealth + "/" + maxHealth);
+        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
         
     }
     void Launch()
