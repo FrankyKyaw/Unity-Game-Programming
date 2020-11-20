@@ -276,10 +276,10 @@ TextureImporter:
       name: MrClockworkWalkDown3
       rect:
         serializedVersion: 2
-        x: 512
-        y: 768.2
+        x: 509
+        y: 765
         width: 256
-        height: 255.8
+        height: 256
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

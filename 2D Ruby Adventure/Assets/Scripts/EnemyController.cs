@@ -17,11 +17,15 @@ public class EnemyController : MonoBehaviour
 
     Animator animator;
 
+    public AudioClip fixedClip;
+    AudioSource audioSource;
+
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -80,5 +84,10 @@ public class EnemyController : MonoBehaviour
         //there was an error about rigidbody being deprecated
         smokeEffect.Stop();
         animator.SetTrigger("Fixed");
+        PlaySound(fixedClip);
+    }
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 }
