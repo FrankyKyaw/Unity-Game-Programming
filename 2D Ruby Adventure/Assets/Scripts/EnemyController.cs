@@ -20,6 +20,7 @@ public class EnemyController : MonoBehaviour
     public AudioClip fixedClip;
     AudioSource audioSource;
 
+
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -85,6 +86,7 @@ public class EnemyController : MonoBehaviour
         smokeEffect.Stop();
         animator.SetTrigger("Fixed");
         PlaySound(fixedClip);
+
     }
     public void PlaySound(AudioClip clip)
     {
