@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class EnemyController : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class EnemyController : MonoBehaviour
     public AudioClip fixedClip;
     AudioSource audioSource;
 
+    public int robotsToFix = 4;
+
+    public TextMeshProUGUI countRobots;
 
     void Start()
     {
@@ -27,6 +31,7 @@ public class EnemyController : MonoBehaviour
         timer = changeTime;
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        SetRobotText();
     }
     void Update()
     {
@@ -86,10 +91,19 @@ public class EnemyController : MonoBehaviour
         smokeEffect.Stop();
         animator.SetTrigger("Fixed");
         PlaySound(fixedClip);
-
+        RobotsFixed();
     }
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
+    }
+    public void RobotsFixed()
+    {
+        robotsToFix = robotsToFix - 1;
+        SetRobotText();
+    }
+    void SetRobotText()
+    {
+        countRobots.text = "Robots to fix: " + robotsToFix.ToString();
     }
 }
