@@ -5,7 +5,6 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
 	public GameObject dialogBox;
-	public DialogTrigger dialogTrigger;
 	void Start()
 	{
 		dialogBox.SetActive(false);
@@ -18,5 +17,6 @@ public class NPC : MonoBehaviour
 	public void DisplayDialog()
 	{
 		dialogBox.SetActive(true);
+		FindObjectOfType<DialogTrigger>().TriggerDialog();
 	}
 }
