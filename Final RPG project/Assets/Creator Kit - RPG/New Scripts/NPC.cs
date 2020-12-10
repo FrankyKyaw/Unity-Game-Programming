@@ -5,18 +5,26 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
 	public GameObject dialogBox;
+	
 	void Start()
 	{
 		dialogBox.SetActive(false);
 
 	}
-	void Update()
-	{
 
-	}
 	public void DisplayDialog()
 	{
-		dialogBox.SetActive(true);
+		if(dialogBox.activeInHierarchy == false)
+		{
+			dialogBox.SetActive(true);
+			
+		}
+		else
+		{
+			dialogBox.SetActive(false);
+		}
+		//source:https://answers.unity.com/questions/834134/why-does-unity-mean-with-cannot-implicitly-convert.html
 		FindObjectOfType<DialogTrigger>().TriggerDialog();
+		
 	}
 }

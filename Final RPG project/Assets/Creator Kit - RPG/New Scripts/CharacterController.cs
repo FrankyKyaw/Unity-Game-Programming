@@ -4,6 +4,7 @@ using UnityEngine;
 using RPGM.Gameplay;
 using UnityEngine;
 using UnityEngine.U2D;
+using TMPro;
 
 public class CharacterController : MonoBehaviour
 {   
@@ -14,11 +15,14 @@ public class CharacterController : MonoBehaviour
     float vertical;
     public float speed;
     Vector2 moveDirection = new Vector2(1,0);
+    private int count;
+    public TextMeshProUGUI countText;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
+        SetCountText();
     }
 
     
@@ -81,6 +85,20 @@ public class CharacterController : MonoBehaviour
         position.y = position.y + vertical * speed * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("QuestItems"))
+        {
+            other.gameObject.SetActive(false);
+            count = count + 1;
+            SetCountText();
+        }
+    }
+    void SetCountText()
+    {
+        countText.text = "Chickens: " + count.ToString();
+
     }
 
 }

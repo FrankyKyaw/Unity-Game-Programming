@@ -92,10 +92,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Dad
+    name: 
     sentences:
-    - "We are having a celebration feast today.\t"
-    - Go find ten chickens for me to cook.
+    - "We are having a feast today.\t"
+    - 'Can you go find five chickens? '
     - Do it fast, we have little time.
     responses: []
 --- !u!114 &102535206
@@ -166,6 +166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1409810852}
+  response1: {fileID: 0}
+  response2: {fileID: 0}
 --- !u!1 &1409810850
 GameObject:
   m_ObjectHideFlags: 0
